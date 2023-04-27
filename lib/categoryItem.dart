@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_10/category_model.dart';
+import 'package:flutter_application_10/details_screen.dart';
 
 class CategoryItem extends StatelessWidget {
   const CategoryItem({super.key, required this.categoryData});
@@ -10,7 +11,8 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (ctx) => const DetailsScreen()));
       },
       splashColor: Colors.blueGrey,
       child: Container(
