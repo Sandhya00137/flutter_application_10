@@ -82,6 +82,11 @@ class _CategoriesScreenState extends State<CategoriesScreen>
           ),
         ],
       ),
+      // custom animation using silvers 
+            // body : CustomScrollView(slivers: [
+           //   SliverAppBar(),
+          //   SliverList(delegate: AnimatedBuilder),
+         // ],)
       body: AnimatedBuilder(
         animation: _animationController,
         child: GridView(
